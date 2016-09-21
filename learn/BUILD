@@ -10,3 +10,14 @@ java_binary(
         "@org_slf4j_slf4j_api//jar"
     ],
 )
+
+cc_binary(
+    name = "jieba_demo",
+    srcs = ["jieba_demo.cc",],
+    deps = [
+        "@cppjieba_git//:cppjieba"
+    ],
+    data = [
+        "@cppjieba_git//:dict",
+    ],
+)
