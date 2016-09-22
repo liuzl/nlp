@@ -21,3 +21,14 @@ cc_binary(
         "@cppjieba_git//:dict",
     ],
 )
+
+java_binary(
+    name = "hanlp-demo",
+    srcs = [
+        "HanLPDemo.java",
+    ],
+    main_class = "HanLPDemo",
+    deps = [
+        "@com_hankcs_hanlp//jar",
+    ],
+)

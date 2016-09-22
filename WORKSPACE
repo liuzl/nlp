@@ -13,3 +13,8 @@ git_repository(
     commit = "76356ead3f5909d00fb1a2d57d8e64737d234043",
     remote = "https://github.com/liuzl/cppjieba.git",
 )
+
+maven_jar(
+    name = "com_hankcs_hanlp",
+    artifact = "com.hankcs:hanlp:portable-1.2.11",
+)
