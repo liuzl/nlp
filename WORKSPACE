@@ -8,11 +8,15 @@ maven_jar(
     artifact = "org.slf4j:slf4j-api:1.7.21",
 )
 
-new_git_repository(
-    name = "thulac_git",
-    commit = "33f1bd859c36b36368e4261f344f2296f297c12f",
-    remote = "https://github.com/thunlp/THULAC.git",
-    build_file = "third_party/thulac/BUILD",
+git_repository(
+    name = "cppjieba_git",
+    commit = "76356ead3f5909d00fb1a2d57d8e64737d234043",
+    remote = "https://github.com/liuzl/cppjieba.git",
+)
+
+maven_jar(
+    name = "com_hankcs_hanlp",
+    artifact = "com.hankcs:hanlp:portable-1.2.11",
 )
 
 new_git_repository(
