@@ -1,5 +1,15 @@
-cc_binary(
+licenses(["notice"])
+
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
     name = "fasttext",
-    srcs = glob(["src/*.h"]) + glob(["src/*.cc"]),
+    hdrs = glob(["src/*.h"]),
+    srcs = glob(["src/*.cc"]),
     includes = ["src",],
+)
+
+cc_binary(
+    name = "main",
+    deps = [":fasttext",],
 )
