@@ -30,6 +30,6 @@ new_git_repository(
 
 git_repository(
     name = "com_github_liuzl_cjk_tokenizer",
-    commit = "3d4e52454b2bf9a05855beeeeab3cb09618ee97d",
+    commit = "f4d3d81e135d3e8c256fc307a164676004ec2296",
     remote = "https://github.com/liuzl/cjk-tokenizer.git",
 )
