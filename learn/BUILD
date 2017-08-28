@@ -15,10 +15,10 @@ cc_binary(
     name = "jieba_demo",
     srcs = ["jieba_demo.cc",],
     deps = [
-        "@cppjieba_git//:cppjieba"
+        "@com_github_liuzl_cppjieba//:cppjieba"
     ],
     data = [
-        "@cppjieba_git//:dict",
+        "@com_github_liuzl_cppjieba//:dict",
     ],
 )
 
